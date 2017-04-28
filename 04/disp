@@ -1,0 +1,5 @@
+%keyboard Teclado
+0x80 0x81 0x00
+
+%leds Resultado
+bbbbbbbb 0x40
