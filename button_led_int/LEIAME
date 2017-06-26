@@ -1,0 +1,20 @@
+Este exemplo mostra como utilizar um botão com interrupção do tipo FIQ.
+
+O exemplo tem um botão do tipo Push e um único Led. A cada vez que
+o botão é pressionado o Led muda de estado (ligado/desligado).
+
+Para executar, use o montador
+
+arm-none-eabi-as -o test.o test.s
+
+depois o ligador
+
+arm-none-eabi-ld -o test -Tmapa.lds test.o
+
+obtendo o arquivo executável de nome "test".
+
+Então inicie o simulador
+
+armsim -l test -d devices.txt
+
+No simulador, execute "g _start".

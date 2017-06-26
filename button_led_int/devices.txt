@@ -1,0 +1,7 @@
+# arquivo de configuração de dispositivos para o simulador
+
+%leds Led
+r 0xa0000
+
+%buttons Comando
+Liga/Desliga 0x90000 7 P
